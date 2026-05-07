@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คลินิกเด็กบ้านหมอใจดี ราชบุรี | คลินิกเด็กใกล้ฉัน Pediatric Clinic</title>
+    <meta name="description"
+        content="คลินิกเด็กบ้านหมอใจดี คลินิกเด็กราชบุรี ดูแลโดยกุมารแพทย์เฉพาะทาง บริการวัคซีน ตรวจพัฒนาการเด็ก Best children’s clinics near me in Ratchaburi.">
+    <meta name="keywords"
+        content="คลินิกเด็กใกล้ฉัน, คลินิกเด็กราชบุรี, Pediatric, คลินิกใกล้ฉัน, คลินิกราชบุรี, คลินิกเด็ก 24 ชั่วโมง ใกล้ฉัน">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Mitr', 'sans-serif'],
+                    },
+                    colors: {
+                        mint: '#e0f2fe',
+                        'teal-primary': '#0d9488',
+                        'pastel-pink': '#fce7f3',
+                        'soft-yellow': '#fef08a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Mitr', sans-serif;
+        }
+
+        /* Language Toggle Logic */
+        body[data-lang="th"] .lang-en {
+            display: none !important;
+        }
+
+        body[data-lang="en"] .lang-th {
+            display: none !important;
+        }
+    </style>
+    <script>
+        function setLang(lang) {
+            document.body.setAttribute('data-lang', lang);
+
+            const btnTh = document.getElementById('btn-th');
+            const btnEn = document.getElementById('btn-en');
+
+            if (lang === 'th') {
+                btnTh.className = "px-3 py-1 text-sm font-bold bg-white rounded-full shadow-sm text-teal-primary transition-all";
+                btnEn.className = "px-3 py-1 text-sm font-medium text-slate-500 rounded-full hover:text-teal-primary transition-all cursor-pointer";
+                document.title = "คลินิกเด็กบ้านหมอใจดี ราชบุรี | คลินิกเด็กใกล้ฉัน Pediatric Clinic";
+                document.querySelector('meta[name="description"]').content = "คลินิกเด็กบ้านหมอใจดี คลินิกเด็กราชบุรี ดูแลโดยกุมารแพทย์เฉพาะทาง บริการวัคซีน ตรวจพัฒนาการเด็ก Best children’s clinics near me in Ratchaburi.";
+            } else {
+                btnEn.className = "px-3 py-1 text-sm font-bold bg-white rounded-full shadow-sm text-teal-primary transition-all";
+                btnTh.className = "px-3 py-1 text-sm font-medium text-slate-500 rounded-full hover:text-teal-primary transition-all cursor-pointer";
+                document.title = "Baan Mor Jai Dee | Best children’s clinics near me in Ratchaburi";
+                document.querySelector('meta[name="description"]').content = "Find a pediatric clinic in Ratchaburi with evening hours. Affordable pediatric clinics with vaccination services.";
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-slate-50 text-slate-800" data-lang="th">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-semibold text-teal-primary flex items-center gap-3">
+                <img src="imgs/logo.jpg" alt="Logo บ้านหมอใจดี" class="h-12 w-auto object-contain">
+                <span class="lang-th">บ้านหมอใจดี</span>
+                <span class="lang-en">Baan Mor Jai Dee</span>
+            </div>
+            <div class="hidden md:flex gap-6 text-slate-600 font-medium">
+                <a href="#about" class="hover:text-teal-primary transition">
+                    <span class="lang-th">รู้จักคุณหมอ</span><span class="lang-en">About Doctors</span>
+                </a>
+                <a href="#services" class="hover:text-teal-primary transition">
+                    <span class="lang-th">บริการของเรา</span><span class="lang-en">Our Services</span>
+                </a>
+                <a href="#faq-seo" class="hover:text-teal-primary transition">
+                    <span class="lang-th">สาระน่ารู้ & FAQ</span><span class="lang-en">FAQ & Knowledge</span>
+                </a>
+                <a href="#contact" class="hover:text-teal-primary transition">
+                    <span class="lang-th">ติดต่อเรา</span><span class="lang-en">Contact Us</span>
+                </a>
+            </div>
+            <div class="flex items-center gap-4">
+                <!-- Language Toggle -->
+                <div class="flex items-center bg-slate-100 p-1 rounded-full border border-slate-200">
+                    <button id="btn-th" onclick="setLang('th')"
+                        class="px-3 py-1 text-sm font-bold bg-white rounded-full shadow-sm text-teal-primary transition-all">TH</button>
+                    <button id="btn-en" onclick="setLang('en')"
+                        class="px-3 py-1 text-sm font-medium text-slate-500 rounded-full hover:text-teal-primary transition-all cursor-pointer">EN</button>
+                </div>
+                <a href="#contact"
+                    class="hidden sm:inline-block bg-teal-primary text-white px-5 py-2 rounded-full font-medium hover:bg-teal-700 transition">
+                    <span class="lang-th">นัดหมายปรึกษา</span><span class="lang-en">Book Appointment</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section class="bg-mint py-16 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 space-y-6">
+                <h1 class="text-4xl md:text-5xl font-semibold text-teal-primary leading-tight">
+                    <span class="lang-th">คลินิกเด็กบ้านหมอใจดี <br> <span
+                            class="text-slate-700 text-3xl">ดูแลลูกรักของคุณด้วยความเข้าใจ</span></span>
+                    <span class="lang-en">Baan Mor Jai Dee <br> <span class="text-slate-700 text-3xl">Pediatric
+                            Clinic</span></span>
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed lang-th">
+                    หากคุณกำลังมองหา <strong>คลินิกเด็กใกล้ฉัน</strong> หรือ <strong>คลินิกราชบุรี</strong>
+                    ที่ให้ความรู้สึกอบอุ่น ปลอดภัย เหมือนอยู่บ้าน เราคือคลินิกที่พร้อมดูแลเด็กๆ ตั้งแต่แรกเกิดจนถึงวัยโต
+                    ด้วยทีมแพทย์เฉพาะทาง
+                </p>
+                <p class="text-lg text-slate-600 leading-relaxed lang-en">
+                    Looking for the <strong>Best children’s clinics near me in Ratchaburi</strong>? We provide warm,
+                    safe, and professional care for your child from newborn to pre-teen by specialized pediatricians.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#contact"
+                        class="bg-teal-primary text-white text-center px-6 py-3 rounded-full font-medium hover:bg-teal-700 transition shadow-lg">
+                        <span class="lang-th">ปรึกษาคุณหมอผ่าน LINE</span><span class="lang-en">Consult via LINE</span>
+                    </a>
+                    <a href="#contact"
+                        class="bg-white text-teal-primary text-center border-2 border-teal-primary px-6 py-3 rounded-full font-medium hover:bg-teal-50 transition">
+                        <span class="lang-th">ดูตารางเวลาทำการ</span><span class="lang-en">View Operating Hours</span>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 w-full flex justify-center">
+                <!-- Hero Image using Logo -->
+                <div
+                    class="bg-white rounded-[3rem] p-8 shadow-xl text-center border-4 border-white max-w-sm w-full transition hover:scale-105 duration-300">
+                    <img src="imgs/logo.jpg" alt="คลินิกเด็กบ้านหมอใจดี"
+                        class="w-full h-auto object-contain rounded-2xl mb-4">
+                    <p class="text-teal-primary font-medium text-lg">
+                        <span class="lang-th">คลินิกสไตล์มินิมอล<br>เป็นมิตรกับเด็ก ลดความกลัวการหาหมอ</span>
+                        <span class="lang-en">Minimalist & Kids-friendly<br>Reducing fear of visiting the doctor</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. About Us -->
+    <section id="about" class="py-20 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <h2 class="text-3xl font-semibold text-teal-primary">
+                <span class="lang-th">รู้จักกับคุณหมอประจำคลินิก</span>
+                <span class="lang-en">Meet Our Pediatricians</span>
+            </h2>
+            <p class="text-slate-600 text-lg leading-relaxed lang-th">
+                <strong>คลินิกเด็กราชบุรี</strong> ของเรา นำทีมโดย <strong>คุณหมอปาล์ม</strong> และ
+                <strong>คุณหมอแป้ง</strong> กุมารแพทย์ผู้เชี่ยวชาญที่เข้าใจทั้งเด็กและผู้ปกครอง
+                พร้อมให้คำปรึกษาอย่างใกล้ชิดและให้ความรู้ทางการแพทย์ที่ถูกต้อง เข้าใจง่าย
+            </p>
+            <p class="text-slate-600 text-lg leading-relaxed lang-en">
+                Our <strong>Pediatric clinic</strong> is led by <strong>Dr. Palm</strong> and <strong>Dr. Pang</strong>,
+                specialized pediatricians who truly understand children and parents. We provide close consultation and
+                accurate medical advice.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-8 justify-center mt-12">
+                <div
+                    class="bg-slate-50 p-8 rounded-3xl shadow-sm border border-slate-100 flex-1 hover:-translate-y-1 transition transform duration-300">
+                    <div
+                        class="w-24 h-24 bg-pastel-pink rounded-full flex items-center justify-center text-5xl mx-auto mb-4">
+                        👩‍⚕️</div>
+                    <h3 class="text-xl font-medium text-teal-primary">
+                        <span class="lang-th">คุณหมอปาล์ม</span><span class="lang-en">Dr. Palm</span>
+                    </h3>
+                    <p class="text-slate-500 mt-2 text-sm leading-relaxed">
+                        <span class="lang-th">กุมารแพทย์เฉพาะทาง<br>โรคเลือดและมะเร็งในเด็ก</span>
+                        <span class="lang-en">Pediatric Hematologist & Oncologist</span>
+                    </p>
+                </div>
+                <div
+                    class="bg-slate-50 p-8 rounded-3xl shadow-sm border border-slate-100 flex-1 hover:-translate-y-1 transition transform duration-300">
+                    <div class="w-24 h-24 bg-mint rounded-full flex items-center justify-center text-5xl mx-auto mb-4">
+                        👩‍⚕️</div>
+                    <h3 class="text-xl font-medium text-teal-primary">
+                        <span class="lang-th">คุณหมอแป้ง</span><span class="lang-en">Dr. Pang</span>
+                    </h3>
+                    <p class="text-slate-500 mt-2 text-sm leading-relaxed">
+                        <span class="lang-th">กุมารแพทย์เฉพาะทาง<br>โรคเลือดและมะเร็งในเด็ก</span>
+                        <span class="lang-en">Pediatric Hematologist & Oncologist</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Our Services -->
+    <section id="services" class="py-20 px-4 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-semibold text-teal-primary">
+                    <span class="lang-th">บริการของเรา (Our Services)</span>
+                    <span class="lang-en">Our Services</span>
+                </h2>
+                <p class="text-slate-600 mt-2">
+                    <span class="lang-th">ครอบคลุมการดูแลสุขภาพเด็ก ด้วยราคามิตรภาพ</span>
+                    <span class="lang-en">Comprehensive child healthcare with friendly pricing.</span>
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-pastel-pink rounded-full flex items-center justify-center text-3xl mb-4">🩺
+                    </div>
+                    <h3 class="text-xl font-medium mb-3 text-slate-800">
+                        <span class="lang-th">ตรวจรักษาโรคเด็กทั่วไป</span>
+                        <span class="lang-en">General Pediatric Care</span>
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed lang-th">
+                        รักษาตั้งแต่อาการป่วยพื้นฐานถึงโรคระบาด (ไข้เลือดออก, RSV) อย่างทันท่วงที
+                    </p>
+                    <p class="text-slate-600 text-sm leading-relaxed lang-en">
+                        Treatments for general illness to outbreaks like RSV and Dengue. We are one of the
+                        <strong>pediatric clinics offering emergency care for toddlers</strong>.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-mint rounded-full flex items-center justify-center text-3xl mb-4">💉</div>
+                    <h3 class="text-xl font-medium mb-3 text-slate-800">
+                        <span class="lang-th">บริการวัคซีน (Vaccination)</span>
+                        <span class="lang-en">Vaccination Services</span>
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed lang-th">
+                        มีทั้งแบบฉีดและแบบพ่นจมูก (ลูกกลัวเข็มไม่ต้องร้องไห้แล้ว!) พร้อมแพ็กเกจราคามิตรภาพ
+                    </p>
+                    <p class="text-slate-600 text-sm leading-relaxed lang-en">
+                        We are known as an <strong>affordable pediatric clinic with vaccination services</strong>,
+                        offering both traditional and nasal spray options.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-soft-yellow rounded-full flex items-center justify-center text-3xl mb-4">🫁
+                    </div>
+                    <h3 class="text-xl font-medium mb-3 text-slate-800">
+                        <span class="lang-th">บริการพ่นยาเบื้องต้น</span>
+                        <span class="lang-en">Nebulizer Treatments</span>
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed lang-th">
+                        มีบริการพ่นยาเพื่อบรรเทาอาการ พร้อมอุปกรณ์ที่สะอาดและปลอดภัย
+                    </p>
+                    <p class="text-slate-600 text-sm leading-relaxed lang-en">
+                        Nebulizer treatments available for basic symptom relief
+                    </p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center text-3xl mb-4">📈
+                    </div>
+                    <h3 class="text-xl font-medium mb-3 text-slate-800">
+                        <span class="lang-th">ตรวจพัฒนาการเด็ก</span>
+                        <span class="lang-en">Child Development</span>
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed lang-th">
+                        ดูแลการเจริญเติบโตให้สมวัย ครอบคลุมทั้งด้านร่างกาย กล้ามเนื้อ และพัฒนาการทางสมอง
+                    </p>
+                    <p class="text-slate-600 text-sm leading-relaxed lang-en">
+                        One of the <strong>top-rated clinics for child development checkups</strong>, offering
+                        <strong>developmental assessments for preschoolers</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Knowledge Base & SEO FAQ -->
+    <section id="faq-seo" class="py-20 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-semibold text-teal-primary">
+                    <span class="lang-th">สาระน่ารู้ & คำถามที่พบบ่อย (FAQ)</span>
+                    <span class="lang-en">Knowledge Base & FAQ</span>
+                </h2>
+                <p class="text-slate-600 mt-2">
+                    <span class="lang-th">รวมข้อมูลสำคัญสำหรับคุณพ่อคุณแม่</span>
+                    <span class="lang-en">Important information for parents</span>
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- TH FAQ -->
+                <div class="lang-th space-y-6">
+                    <div class="bg-slate-50 p-6 rounded-2xl">
+                        <h4 class="text-lg font-medium text-teal-primary mb-2">Q: ตามหา คลินิกเด็ก 24 ชั่วโมง ใกล้ฉัน
+                            ในราชบุรี เปิดดึกไหม?</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">A: แม้คลินิกของเราจะไม่ได้เปิด 24 ชั่วโมง
+                            แต่เราเข้าใจถึงความกังวลเมื่อลูกป่วย เราจึงมีบริการเวลาทำการช่วงเย็น
+                            เพื่อความสะดวกในการเลิกงานแล้วพาลูกมาหาหมอได้ทันที</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl">
+                        <h4 class="text-lg font-medium text-teal-primary mb-2">Q: วัคซีนที่จำเป็นสำหรับเด็ก 1 ขวบ
+                            มีอะไรบ้าง?</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">A: สำหรับเด็ก 1 ขวบ แนะนำวัคซีนหลัก เช่น
+                            หัด-หัดเยอรมัน-คางทูม (MMR), ไข้สมองอักเสบเจอี (JE) และวัคซีนทางเลือก เช่น ไอพีดี (IPD)
+                            หรือไข้หวัดใหญ่ คลินิกของเรามีตารางราคามิตรภาพ</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl">
+                        <h4 class="text-lg font-medium text-teal-primary mb-2">Q: ลูกกลัวเข็มมาก
+                            มีวิธีเตรียมตัวก่อนมาหาหมออย่างไร?</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">A: คลินิกถูกออกแบบมาในสไตล์บ้าน
+                            มีโซนของเล่นลดความเครียด คุณพ่อคุณแม่สามารถเลือกวัคซีนแบบพ่นจมูกได้สำหรับบางชนิด
+                            เพื่อลดความกังวลของน้องๆ</p>
+                    </div>
+                </div>
+
+                <!-- EN FAQ -->
+                <div class="lang-en space-y-6">
+                    <div class="bg-slate-50 p-6 rounded-2xl">
+                        <h4 class="text-lg font-medium text-teal-primary mb-2">Q: What are the recommended vaccinations
+                            for a 1-year-old?</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">A: For a 1-year-old, core vaccines include MMR
+                            and JE. Optional vaccines like IPD and Influenza (including nasal spray options) are also
+                            highly recommended. We offer clear vaccination packages.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl">
+                        <h4 class="text-lg font-medium text-teal-primary mb-2">Q: How to prepare a toddler for their
+                            first doctor's visit?</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">A: Explain positively that they will meet a
+                            kind doctor. Our minimalist, kids-friendly clinic features a play zone to reduce anxiety. We
+                            also provide needle-free vaccine options like nasal sprays.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl">
+                        <h4 class="text-lg font-medium text-teal-primary mb-2">Q: Cost of a general check-up for a
+                            child.</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">A: Our general check-ups are reasonably priced
+                            with friendly pricing. You will always be informed of any costs before treatments proceed.
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl">
+                        <h4 class="text-lg font-medium text-teal-primary mb-2">Q: Find a pediatric clinic in Ratchaburi
+                            with evening hours.</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">A: We understand that children can get sick
+                            after work hours. That is why our clinic provides convenient evening hours. Check our
+                            contact section for exact times.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl">
+                        <h4 class="text-lg font-medium text-teal-primary mb-2">Q: How to book an appointment at a kids’
+                            health clinic online?</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">A: It's very simple! You can scan our QR code
+                            or add us on LINE Official to book an appointment, ask questions, and consult directly with
+                            our staff online.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Contact & Map -->
+    <section id="contact" class="py-20 px-4 bg-teal-primary text-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+            <div class="md:w-1/2 space-y-6">
+                <h2 class="text-3xl font-semibold text-soft-yellow">
+                    <span class="lang-th">ติดต่อ คลินิกเด็กบ้านหมอใจดี</span>
+                    <span class="lang-en">Contact Baan Mor Jai Dee</span>
+                </h2>
+                <p class="text-teal-50 text-lg">
+                    <span class="lang-th">คลินิกเฉพาะทางเด็ก จ.ราชบุรี ที่พร้อมดูแลครอบครัวของคุณ</span>
+                    <span class="lang-en">Specialized Pediatric Clinic in Ratchaburi, ready to care for your
+                        family.</span>
+                </p>
+
+                <div class="space-y-4 bg-teal-800/50 p-6 rounded-2xl">
+                    <p class="flex items-start gap-4">
+                        <span class="text-3xl">📍</span>
+                        <span class="lang-th">อ.เมือง จ.ราชบุรี<br><span class="text-sm text-teal-200">ถนนศรีสุริยวงศ์
+                                อยู่ตรงข้ามร้านหมูวรรณา ใกล้ตลาดศรีเมือง</span></span>
+                        <span class="lang-en">Mueang Ratchaburi<br><span class="text-sm text-teal-200">Si Suriyawong Rd.
+                                (Opposite Moo Wanna Shop, near Sri Muang Market)</span></span>
+                    </p>
+                    <p class="flex items-center gap-4">
+                        <span class="text-3xl">⏰</span>
+                        <span class="lang-th"><strong>เวลาทำการ:</strong> เปิดบริการทุกวัน<br><span
+                                class="text-sm text-teal-200">(เปิดให้บริการช่วงเย็น Evening Hours)</span></span>
+                        <span class="lang-en"><strong>Operating Hours:</strong> Open Every Day<br><span
+                                class="text-sm text-teal-200">(Evening Hours Available)</span></span>
+                    </p>
+                    <p class="flex items-center gap-4">
+                        <span class="text-3xl">📞</span>
+                        <span class="text-xl font-semibold text-soft-yellow">098-3642264</span>
+                    </p>
+                    <p class="flex items-center gap-4 mt-2 pt-4 border-t border-teal-700">
+                        <svg class="w-8 h-8 fill-current text-white" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                        <span class="text-lg">คลินิกเด็กบ้านหมอใจดี</span>
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl text-slate-800 inline-block w-full text-center shadow-lg">
+                    <p class="font-medium mb-4 text-teal-primary text-lg">
+                        <span class="lang-th">แอด LINE นัดหมาย / ปรึกษาคุณหมอ</span>
+                        <span class="lang-en">Add LINE for Appointments / Consultation</span>
+                    </p>
+                    <div class="flex justify-center mb-4">
+                        <div class="p-2 border-2 border-slate-200 rounded-xl bg-slate-50">
+                            <!-- Using the uploaded LINE QR Code -->
+                            <img src="imgs/QR.png" alt="LINE QR Code" class="w-40 h-40 object-cover rounded-lg">
+                        </div>
+                    </div>
+                    <button
+                        class="w-full bg-[#00B900] text-white font-medium py-3 rounded-full hover:bg-green-600 transition shadow-md">
+                        <span class="lang-th">เพิ่มเพื่อน @BaanMorJaiDee</span>
+                        <span class="lang-en">Add Friend @BaanMorJaiDee</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="md:w-1/2 w-full h-full flex flex-col items-center">
+                <p class="font-medium text-soft-yellow mb-4 text-lg">
+                    <span class="lang-th">แผนที่การเดินทาง</span>
+                    <span class="lang-en">Location Map</span>
+                </p>
+                <!-- Using the uploaded Map Image -->
+                <div
+                    class="w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 flex items-center justify-center relative group">
+                    <img src="imgs/maps.png" alt="แผนที่คลินิกเด็กบ้านหมอใจดี"
+                        class="w-full h-auto object-contain transition duration-500 group-hover:scale-105">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <img src="imgs/logo.jpg" alt="Logo" class="h-8 w-auto grayscale opacity-50">
+                <p>
+                    <span class="lang-th">คลินิกเด็กบ้านหมอใจดี จ.ราชบุรี</span>
+                    <span class="lang-en">Baan Mor Jai Dee Pediatric Clinic, Ratchaburi</span>
+                </p>
+            </div>
+            <p>&copy; 2026 All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
