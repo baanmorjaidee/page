@@ -78,6 +78,9 @@
                 <a href="#about" class="hover:text-teal-primary transition">
                     <span class="lang-th">รู้จักคุณหมอ</span><span class="lang-en">About Doctors</span>
                 </a>
+                <a href="#schedule" class="hover:text-teal-primary transition">
+                    <span class="lang-th">ตารางตรวจ</span><span class="lang-en">Schedule</span>
+                </a>
                 <a href="#services" class="hover:text-teal-primary transition">
                     <span class="lang-th">บริการของเรา</span><span class="lang-en">Our Services</span>
                 </a>
@@ -96,7 +99,7 @@
                     <button id="btn-en" onclick="setLang('en')"
                         class="px-3 py-1 text-sm font-medium text-slate-500 rounded-full hover:text-teal-primary transition-all cursor-pointer">EN</button>
                 </div>
-                <a href="#contact"
+                <a href="#add-line"
                     class="hidden sm:inline-block bg-teal-primary text-white px-5 py-2 rounded-full font-medium hover:bg-teal-700 transition">
                     <span class="lang-th">นัดหมายปรึกษา</span><span class="lang-en">Book Appointment</span>
                 </a>
@@ -124,7 +127,7 @@
                     safe, and professional care for your child from newborn to pre-teen by specialized pediatricians.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <a href="#contact"
+                    <a href="#add-line"
                         class="bg-teal-primary text-white text-center px-6 py-3 rounded-full font-medium hover:bg-teal-700 transition shadow-lg">
                         <span class="lang-th">ปรึกษาคุณหมอผ่าน LINE</span><span class="lang-en">Consult via LINE</span>
                     </a>
@@ -197,7 +200,7 @@
     </section>
 
     <!-- 3. Our Services -->
-    <section id="services" class="py-20 px-4 bg-slate-50">
+    <section id="services" class="py-20 px-4 bg-white">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-semibold text-teal-primary">
@@ -426,7 +429,25 @@
                     </a>
                 </div>
 
-                <div class="bg-white p-8 rounded-3xl text-slate-800 inline-block w-full text-center shadow-lg">
+                <!-- Doctor Schedule in Contact -->
+                <div id="schedule"
+                    class="bg-white p-6 rounded-3xl text-slate-800 inline-block w-full text-center shadow-lg mb-6">
+                    <p class="font-medium mb-4 text-teal-primary text-lg">
+                        <span class="lang-th">ตารางตรวจคุณหมอ</span>
+                        <span class="lang-en">Doctor Schedule</span>
+                    </p>
+                    <div class="w-full overflow-hidden rounded-xl border border-slate-200">
+                        <iframe
+                            src="https://calendar.google.com/calendar/embed?height=500&wkst=1&ctz=Asia%2FBangkok&showPrint=0&showTz=0&showCalendars=0&showTabs=0&showTitle=0&showNav=0&hl=th&src=YmFhbm1vcmphaWRlZUBnbWFpbC5jb20&src=dGgudGgjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039be5&color=%230b8043"
+                            style="border-width:0" width="100%" height="500" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="md:w-1/2 w-full h-full flex flex-col items-center">
+                <div id="add-line" class="bg-white p-8 rounded-3xl text-slate-800 inline-block w-full text-center shadow-lg mb-8">
                     <p class="font-medium mb-4 text-teal-primary text-lg">
                         <span class="lang-th">แอด LINE นัดหมาย / ปรึกษาคุณหมอ</span>
                         <span class="lang-en">Add LINE for Appointments / Consultation</span>
@@ -443,9 +464,7 @@
                         <span class="lang-en">Add Friend @100jgoyv</span>
                     </a>
                 </div>
-            </div>
 
-            <div class="md:w-1/2 w-full h-full flex flex-col items-center">
                 <p class="font-medium text-soft-yellow mb-4 text-lg">
                     <span class="lang-th">แผนที่การเดินทาง</span>
                     <span class="lang-en">Location Map</span>
