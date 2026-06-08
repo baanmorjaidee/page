@@ -9,8 +9,94 @@
         content="คลินิกเด็กบ้านหมอใจดี คลินิกเด็กราชบุรี ดูแลโดยกุมารแพทย์เฉพาะทาง บริการวัคซีน ตรวจพัฒนาการเด็ก Best children’s clinics near me in Ratchaburi.">
     <meta name="keywords"
         content="คลินิกเด็กใกล้ฉัน, คลินิกเด็กราชบุรี, Pediatric, คลินิกใกล้ฉัน, คลินิกราชบุรี, คลินิกเด็ก 24 ชั่วโมง ใกล้ฉัน, คลินิกเด็ก 24 ชม">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Canonical & hreflang -->
+    <link rel="canonical" href="https://baanmorjaidee.github.io/page/">
+    <link rel="alternate" hreflang="th" href="https://baanmorjaidee.github.io/page/">
+    <link rel="alternate" hreflang="en" href="https://baanmorjaidee.github.io/page/">
+    <link rel="alternate" hreflang="x-default" href="https://baanmorjaidee.github.io/page/">
+
+    <!-- Open Graph (Facebook / LINE) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://baanmorjaidee.github.io/page/">
+    <meta property="og:title" content="คลินิกเด็กบ้านหมอใจดี ราชบุรี | คลินิกเด็กใกล้ฉัน">
+    <meta property="og:description" content="คลินิกเด็กราชบุรี ดูแลโดยกุมารแพทย์เฉพาะทาง บริการวัคซีน ตรวจพัฒนาการเด็ก พ่นยา เปิดเย็นทุกวัน">
+    <meta property="og:image" content="https://baanmorjaidee.github.io/page/imgs/logo.jpg">
+    <meta property="og:image:alt" content="คลินิกเด็กบ้านหมอใจดี ราชบุรี">
+    <meta property="og:locale" content="th_TH">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:site_name" content="คลินิกเด็กบ้านหมอใจดี">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="คลินิกเด็กบ้านหมอใจดี ราชบุรี | คลินิกเด็กใกล้ฉัน">
+    <meta name="twitter:description" content="คลินิกเด็กราชบุรี ดูแลโดยกุมารแพทย์เฉพาะทาง บริการวัคซีน ตรวจพัฒนาการเด็ก พ่นยา เปิดเย็นทุกวัน">
+    <meta name="twitter:image" content="https://baanmorjaidee.github.io/page/imgs/logo.jpg">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "คลินิกเด็กบ้านหมอใจดี",
+      "alternateName": "Baan Mor Jai Dee Pediatric Clinic",
+      "description": "คลินิกเด็กราชบุรี ดูแลโดยกุมารแพทย์เฉพาะทาง บริการวัคซีน ตรวจพัฒนาการเด็ก พ่นยา เปิดเย็นทุกวัน",
+      "url": "https://baanmorjaidee.github.io/page/",
+      "telephone": "098-364-2264",
+      "image": "https://baanmorjaidee.github.io/page/imgs/logo.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ถนนศรีสุริยวงศ์ (ตรงข้ามร้านหมูวรรณา ใกล้ตลาดศรีเมือง)",
+        "addressLocality": "อำเภอเมืองราชบุรี",
+        "addressRegion": "ราชบุรี",
+        "postalCode": "70000",
+        "addressCountry": "TH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 13.5326634,
+        "longitude": 99.8053459
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "17:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday", "Sunday"],
+          "opens": "12:00",
+          "closes": "17:00"
+        }
+      ],
+      "medicalSpecialty": "Pediatric",
+      "availableService": [
+        { "@type": "MedicalTherapy", "name": "ตรวจรักษาโรคเด็กทั่วไป" },
+        { "@type": "MedicalTherapy", "name": "บริการวัคซีน (ฉีดและพ่นจมูก)" },
+        { "@type": "MedicalTherapy", "name": "พ่นยา (Nebulizer)" },
+        { "@type": "MedicalTherapy", "name": "ตรวจพัฒนาการเด็ก" }
+      ],
+      "employee": [
+        { "@type": "Physician", "name": "คุณหมอปาล์ม", "medicalSpecialty": "Pediatric" },
+        { "@type": "Physician", "name": "คุณหมอแป้ง", "medicalSpecialty": "Pediatric" }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61578670202221"
+      ]
+    }
+    </script>
+
+    <!-- NOTE: cdn.tailwindcss.com is a dynamic Play CDN — hash pinned to current version.
+         If styles break after a Tailwind update, recompute: curl -s https://cdn.tailwindcss.com | openssl dgst -sha384 -binary | openssl base64 -A -->
+    <script src="https://cdn.tailwindcss.com"
+            integrity="sha384-OLBgp1GsljhM2TJ+sbHjaiH9txEUvgdDTAzHv2P24donTt6/529l+9Ua0vFImLlb"
+            crossorigin="anonymous"></script>
+    <!-- Google Fonts serves dynamic CSS per browser UA — SRI not feasible; crossorigin ensures CORS is enforced -->
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&display=swap"
+          rel="stylesheet"
+          crossorigin="anonymous">
     <script>
         tailwind.config = {
             theme: {
@@ -70,7 +156,7 @@
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="text-2xl font-semibold text-teal-primary flex items-center gap-3">
-                <img src="imgs/logo.jpg" alt="Logo บ้านหมอใจดี" class="h-12 w-auto object-contain">
+                <img src="imgs/logo.jpg" alt="คลินิกเด็กบ้านหมอใจดี ราชบุรี" class="h-12 w-auto object-contain">
                 <span class="lang-th">บ้านหมอใจดี</span>
                 <span class="lang-en">Baan Mor Jai Dee</span>
             </div>
@@ -499,7 +585,7 @@
     <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm">
         <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-3">
-                <img src="imgs/logo.jpg" alt="Logo" class="h-8 w-auto grayscale opacity-50">
+                <img src="imgs/logo.jpg" alt="คลินิกเด็กบ้านหมอใจดี ราชบุรี" class="h-8 w-auto grayscale opacity-50">
                 <p>
                     <span class="lang-th">คลินิกเด็กบ้านหมอใจดี จ.ราชบุรี</span>
                     <span class="lang-en">Baan Mor Jai Dee Pediatric Clinic, Ratchaburi</span>
