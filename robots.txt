@@ -1,0 +1,26 @@
+# robots.txt - คลินิกเด็กบ้านหมอใจดี (Baan Mor Jai Dee Pediatric Clinic)
+# Site: คลินิกเด็กราชบุรี | Pediatric Clinic, Ratchaburi, Thailand
+# URL: https://baanmorjaidee.github.io/page
+# Description: คลินิกเด็กบ้านหมอใจดี ดูแลโดยกุมารแพทย์เฉพาะทาง
+#              บริการวัคซีน ตรวจพัฒนาการเด็ก พ่นยา
+#              Best children's clinic near me in Ratchaburi.
+# Contact: LINE @100jgoyv | Tel: 098-364-2264
+# Location: ถนนศรีสุริยวงศ์ อ.เมือง จ.ราชบุรี
+
+# --- Operating Hours / เวลาทำการ ---
+# วันจันทร์-ศุกร์ (Mon-Fri):          17:00 - 20:00
+# วันเสาร์-อาทิตย์ (Sat-Sun):         12:00 - 17:00
+# วันหยุดราชการ (Public Holidays):     12:00 - 17:00
+
+# --- Allow all search engine crawlers ---
+User-agent: *
+Allow: /
+
+# --- Page anchors (content sections in index.html) ---
+# /page/#about     - รู้จักกับคุณหมอปาล์มและคุณหมอแป้ง (Meet Our Pediatricians)
+# /page/#schedule  - ตารางตรวจคุณหมอประจำเดือน (Doctor Schedule)
+# /page/#services  - บริการของเรา: ตรวจรักษา วัคซีน พ่นยา ตรวจพัฒนาการ
+# /page/#faq-seo   - สาระน่ารู้ & FAQ
+# /page/#contact   - ติดต่อเรา แผนที่ เวลาทำการ LINE QR Code
+
+Sitemap: https://baanmorjaidee.github.io/page/sitemap.xml
