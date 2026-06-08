@@ -97,15 +97,8 @@
     }
     </script>
 
-    <!-- NOTE: cdn.tailwindcss.com is a dynamic Play CDN — hash pinned to current version.
-         If styles break after a Tailwind update, recompute: curl -s https://cdn.tailwindcss.com | openssl dgst -sha384 -binary | openssl base64 -A -->
-    <script src="https://cdn.tailwindcss.com"
-            integrity="sha384-OLBgp1GsljhM2TJ+sbHjaiH9txEUvgdDTAzHv2P24donTt6/529l+9Ua0vFImLlb"
-            crossorigin="anonymous"></script>
-    <!-- Google Fonts serves dynamic CSS per browser UA — SRI not feasible; crossorigin ensures CORS is enforced -->
-    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&display=swap"
-          rel="stylesheet"
-          crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
