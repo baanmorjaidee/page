@@ -1,55 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- หน้าหลัก / Main Page -->
   <url>
     <loc>https://baanmorjaidee.github.io/page/</loc>
     <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="th" href="https://baanmorjaidee.github.io/page/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://baanmorjaidee.github.io/page/"/>
-  </url>
-
-  <!-- Section: รู้จักคุณหมอ / About Doctors -->
-  <url>
-    <loc>https://baanmorjaidee.github.io/page/#about</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Section: ตารางตรวจ / Doctor Schedule -->
-  <url>
-    <loc>https://baanmorjaidee.github.io/page/#schedule</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Section: บริการของเรา / Our Services -->
-  <url>
-    <loc>https://baanmorjaidee.github.io/page/#services</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Section: สาระน่ารู้ & FAQ -->
-  <url>
-    <loc>https://baanmorjaidee.github.io/page/#faq-seo</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Section: ติดต่อเรา / Contact -->
-  <url>
-    <loc>https://baanmorjaidee.github.io/page/#contact</loc>
-    <lastmod>2026-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
 
 </urlset>
